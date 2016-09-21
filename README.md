@@ -8,20 +8,26 @@ opencv3
 numpy
 ```
 
-qtのインストールとか => [Python QTアプリ Standalone App化メモ](http://qiita.com/gollowars/items/387d5fecd29c26cace99)
-opencv3をいれる。=> [https://github.com/gollowars/install-opencv3-python-osx/blob/master/install-opencv3-python3-osx.sh](https://github.com/gollowars/install-opencv3-python-osx/blob/master/install-opencv3-python3-osx.sh)
+ - qtのインストールとか => [Python QTアプリ Standalone App化メモ](http://qiita.com/gollowars/items/387d5fecd29c26cace99)
+ - opencv3をいれる。=> [https://github.com/gollowars/install-opencv3-python-osx/blob/master/install-opencv3-python3-osx.sh](https://github.com/gollowars/install-opencv3-python-osx/blob/master/install-opencv3-python3-osx.sh)
 
 ```
 brew install qt5
 ```
-するとQtDesignerが手に入る。
+これでQtDesignerが手に入る。
+
 QtDeisgnerでuiつくって
 
 
 ```
 pyuic5 mywidgets.ui -o mywidgest.py
 ```
-で利用出来る。
+でuiを簡単に利用出来る。
+
+```
+pyinstaller app.py --windowed --onefile
+```
+でstandaloneアプリ出来上がり。
 
 
 ### reference
