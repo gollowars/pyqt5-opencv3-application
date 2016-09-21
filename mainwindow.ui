@@ -17,42 +17,17 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0" colspan="4">
+      <item row="1" column="0" colspan="5">
        <widget class="QGraphicsView" name="graphicsView"/>
       </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label">
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>16777215</height>
-         </size>
-        </property>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="fileSelectBtn">
         <property name="text">
-         <string>parms1</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <string>File</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="3">
+      <item row="2" column="4">
        <widget class="QPushButton" name="saveBtn">
         <property name="maximumSize">
          <size>
@@ -65,8 +40,8 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_3">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
         <property name="maximumSize">
          <size>
           <width>100</width>
@@ -74,43 +49,38 @@
          </size>
         </property>
         <property name="text">
-         <string>TextLabel</string>
+         <string>Gamma</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
-      <item row="0" column="3">
-       <widget class="QPushButton" name="fileSelectBtn">
-        <property name="text">
-         <string>File</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="3">
-       <widget class="QLineEdit" name="lineEdit"/>
-      </item>
-      <item row="4" column="1" colspan="2">
-       <widget class="QSlider" name="horizontalSlider_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1" colspan="2">
-       <widget class="QSlider" name="horizontalSlider_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
       <item row="2" column="1" colspan="2">
-       <widget class="QSlider" name="slider1">
+       <widget class="QSlider" name="gammaSlider">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
        </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLCDNumber" name="gammaLcdNum">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QLineEdit" name="lineEdit"/>
       </item>
      </layout>
     </item>
